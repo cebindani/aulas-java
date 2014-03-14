@@ -1,0 +1,17 @@
+package helloworld;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		
+		byte a=2;
+		int b=a;
+		
+		a=(byte)b;
+		System.out.println(a);
+		
+		
+
+	}
+
+}
