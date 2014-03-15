@@ -1,0 +1,10 @@
+package br.com.dextra.helloworld;
+
+public abstract class FiguraGeometrica {
+	
+	abstract double area() {
+		
+		
+	}
+
+}

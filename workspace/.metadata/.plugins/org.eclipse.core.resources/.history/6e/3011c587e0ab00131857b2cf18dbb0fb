@@ -18,10 +18,4 @@ public class Retangulo extends FiguraGeometrica{
 //		Math.abs => módulo
 		
 	}
-	
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return "Retângulo: "+ super.toString();
-	}
 }

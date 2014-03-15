@@ -1,6 +1,6 @@
 package br.com.dextra.helloworld;
 
-public class Retangulo extends FiguraGeometrica{
+public class Retangulo {
 	Ponto esquerdoSuperior;
 	Ponto direitoInferior;
 
@@ -17,11 +17,5 @@ public class Retangulo extends FiguraGeometrica{
 		return (Math.abs(direitoInferior.x - esquerdoSuperior.x) * Math.abs(esquerdoSuperior.y - direitoInferior.y)) / 2.0;
 //		Math.abs => módulo
 		
-	}
-	
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return "Retângulo: "+ super.toString();
 	}
 }

@@ -1,0 +1,9 @@
+package br.com.dextra.helloworld;
+
+public class FiguraGeometrica {
+	
+	double area() {
+		return (Math.abs(direitoInferior.x - esquerdoSuperior.x) * Math.abs(esquerdoSuperior.y - direitoInferior.y)) / 2.0;
+//		Math.abs => módulo
+
+}

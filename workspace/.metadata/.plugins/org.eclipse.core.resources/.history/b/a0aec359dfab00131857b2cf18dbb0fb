@@ -26,18 +26,8 @@ public class Hello {
 
 		Ponto b = new Ponto(1, 2);
 
-		FiguraGeometrica r = new Retangulo(new Ponto(1, 9), new Ponto(6, 3));
-		//System.out.println("Area: " + r.area());
-		
-		FiguraGeometrica c = new Circulo(new Ponto(1, 2), 5);
-		
-		FiguraGeometrica[] figuras = {r, c};
-		
-		for (FiguraGeometrica figuraGeometrica: figuras) {
-			System.out.println(figuraGeometrica.toString());
-		}
-		
-		
+		Retangulo r = new Retangulo(new Ponto(1, 9), new Ponto(6, 3));
+		System.out.println("Area: " + r.area());
 
 		// Ponto[] pontos = { a, b };
 		// ArrayList<Ponto> list = new ArrayList();

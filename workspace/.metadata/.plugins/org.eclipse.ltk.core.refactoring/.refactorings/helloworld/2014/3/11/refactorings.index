@@ -6,3 +6,5 @@
 1394838764721	Rename local variable 'dirSup'
 1394843839355	Rename package 'helloworld'
 1394843895909	Rename package 'helloworld.hello'
+1394845909300	Delete element
+1394845924856	Rename type 'Ponto2'

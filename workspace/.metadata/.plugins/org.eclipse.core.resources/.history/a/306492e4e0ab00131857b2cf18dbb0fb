@@ -34,7 +34,7 @@ public class Hello {
 		FiguraGeometrica[] figuras = {r, c};
 		
 		for (FiguraGeometrica figuraGeometrica: figuras) {
-			System.out.println(figuraGeometrica.toString());
+			System.out.println("Area: "+figuraGeometrica.toString());
 		}
 		
 		
