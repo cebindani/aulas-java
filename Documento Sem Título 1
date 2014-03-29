@@ -1,0 +1,7 @@
+mvn archetype:generate -DgroupId=br.com.dextra -DartifactId=hello -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+
+http://mvnrepository.com/
+http://hsqldb.org/
+
+http://hsqldb.org/doc/guide/running-chapt.html
