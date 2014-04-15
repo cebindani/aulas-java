@@ -4,7 +4,7 @@ import javax.persistence.Entity;
 
 @Entity
 public class PessoaJuridica extends Pessoa {
-	
+
 	public String cnpj;
 
 	public PessoaJuridica() {
@@ -17,8 +17,5 @@ public class PessoaJuridica extends Pessoa {
 		return "PessoaJuridica [cnpj=" + cnpj + ", nome=" + nome + ", id=" + id
 				+ "]";
 	}
-	
-	
-	
 
 }

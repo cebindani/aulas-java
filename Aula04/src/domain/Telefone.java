@@ -6,18 +6,15 @@ import javax.persistence.Entity;
 @Entity
 public class Telefone extends BaseEntity {
 
-	
-	private enum tipoTel {comercial,residencial,celular};
-	@Column(name="tipoTel")
+	public enum tipoTel {
+		comercial, residencial, celular
+	};
+
+	@Column(name = "tipoTel")
 	public tipoTel tipo;
+	@Column(length = 3)
 	public String ddd;
 	public String numero;
-	
-	
-	public Telefone() {
-		super();
-	}
-
 
 	@Override
 	public String toString() {

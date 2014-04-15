@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 
 @Entity
 public class Investimento extends BaseEntity {
-	@Column(name="tipo_invest")
+	@Column(name = "tipo_invest")
 	public String tipocd;
 
 	public Investimento() {
@@ -17,6 +17,5 @@ public class Investimento extends BaseEntity {
 	public String toString() {
 		return "Investimento [tipo=" + tipocd + ", id=" + id + "]";
 	}
-	
 
 }

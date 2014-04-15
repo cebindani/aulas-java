@@ -12,7 +12,8 @@ public class Agencia extends BaseEntity {
 	public String nomeGerente;
 	public String codigo;
 	@OneToMany
-	@JoinColumn(name = "agencia_id") //mapeamento bi-direcional
+	@JoinColumn(name = "agencia_id")
+	// mapeamento bi-direcional
 	public List<Pessoa> clientes;
 
 	@Override

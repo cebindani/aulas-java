@@ -6,15 +6,15 @@ import javax.persistence.Persistence;
 
 public class EntityManagerFactoryWrapper {
 
-	public static EntityManagerFactory emf=null;
-	
-	public static EntityManager getEntityManager(){
-		if (emf==null) {
-			emf= Persistence.createEntityManagerFactory("hsql");
+	public static EntityManagerFactory emf = null;
+
+	public static EntityManager getEntityManager() {
+		if (emf == null) {
+			emf = Persistence.createEntityManagerFactory("hsql");
 		}
-		
+
 		return emf.createEntityManager();
-		
+
 	}
 
 }

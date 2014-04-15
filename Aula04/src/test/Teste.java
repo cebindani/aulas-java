@@ -1,12 +1,9 @@
 package test;
 
 import java.util.ArrayList;
-
-import javassist.expr.Instanceof;
+import java.util.concurrent.TimeUnit;
 
 import javax.persistence.TypedQuery;
-
-import com.sun.org.apache.bcel.internal.generic.AALOAD;
 
 import service.GenericDAO;
 import domain.Agencia;
@@ -16,12 +13,17 @@ import domain.Endereco.UF;
 import domain.Pessoa;
 import domain.PessoaFisica;
 import domain.PessoaJuridica;
+import domain.Telefone;
 
 public class Teste {
 
 	public static void main(String[] args) {
 
 		GenericDAO gd = new GenericDAO();
+		
+		Telefone tel1= new Telefone();
+		tel1.ddd="011";
+		tel1.numero="99153-9070";
 
 		// Agencia
 		Agencia ag = new Agencia();

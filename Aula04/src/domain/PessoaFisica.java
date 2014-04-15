@@ -12,14 +12,10 @@ public class PessoaFisica extends Pessoa {
 		// TODO Auto-generated constructor stub
 	}
 
-
-
 	@Override
 	public String toString() {
 		return "PessoaFisica [cpf=" + cpf + ", id=" + id + ", nome=" + nome
 				+ ", endereco=" + endereco + ", agencia=" + agencia + "]";
 	}
-	
-	
-	
+
 }
