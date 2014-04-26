@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/required/classmate-1.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/required/javax.el-2.2.4.jar"/>
+	<classpathentry kind="lib" path="lib/required/javax.el-api-2.2.4.jar"/>
+	<classpathentry kind="lib" path="lib/required/jboss-logging-3.1.3.GA.jar"/>
+	<classpathentry kind="lib" path="lib/required/validation-api-1.1.0.Final.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

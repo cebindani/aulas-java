@@ -13,6 +13,7 @@ public class Exercicio04 {
 	 * com zero). Altere a entidade PessoaJuridica de modo que seja gravado a
 	 * "String" correspondente a enum.
 	 */
+	
 	@Test
 	public void teste() {
 		HibernateServices servico = ServiceFactory.getHibernateService();

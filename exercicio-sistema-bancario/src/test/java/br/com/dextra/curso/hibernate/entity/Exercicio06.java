@@ -1,5 +1,7 @@
 package br.com.dextra.curso.hibernate.entity;
 
+import org.junit.Test;
+
 import br.com.dextra.curso.hibernate.services.HibernateServices;
 import br.com.dextra.curso.hibernate.services.ServiceFactory;
 
@@ -20,6 +22,9 @@ public class Exercicio06 {
 	 * 
 	 * 3. A contaBancaria da pessoaB esteja com 1100
 	 */
+	
+	
+	@Test
 	public void teste() {
 		HibernateServices servico = ServiceFactory.getHibernateService();
 

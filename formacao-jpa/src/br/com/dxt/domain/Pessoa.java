@@ -23,7 +23,7 @@ public abstract class Pessoa extends MyAbstractEntity {
 	@Column
 	public String nome;
 
-	@OneToOne(fetch=FetchType.LAZY) //(cascade = CascadeType.PERSIST) 
+	@OneToOne(fetch=FetchType.LAZY, cascade = CascadeType.PERSIST) 
 	@ForeignKey(name = "fk_pessoa_endereco")
 	public Endereco endereco;
 

@@ -3,6 +3,7 @@ package br.com.dextra.curso.hibernate.entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class ContaBancaria {
@@ -10,11 +11,11 @@ public class ContaBancaria {
 	@Id
 	@GeneratedValue
 	private Long id;
-	
 	private String numero;
-	
 	private Double saldo;
-
+	@ManyToOne
+	private TransacaoBancaria transacoes;
+	
 	public Long getId() {
 		return id;
 	}

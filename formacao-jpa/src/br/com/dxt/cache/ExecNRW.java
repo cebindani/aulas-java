@@ -39,7 +39,18 @@ public class ExecNRW {
 		em2.merge(pessoa);
 		em2.getTransaction().commit();
 
+		
 		System.out.println("->> consulta pessoa com segundo em");
 		System.out.println(em2.find(PessoaNRW.class, p.id).nome);
+		
+		System.out.println("->> consulta pessoa com primeiro em");
+		System.out.println(em1.find(PessoaNRW.class, p.id).nome);
+		
+		
+		System.out.println("->> novo entity manager");
+		EntityManager em3 = emf.createEntityManager();
+		
+		System.out.println("->> consulta pessoa com terceiro em");
+		System.out.println(em3.find(PessoaNRW.class, p.id).nome);
 	}
 }

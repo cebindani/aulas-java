@@ -1,5 +1,7 @@
 package br.com.dextra.curso.hibernate.entity;
 
+import org.junit.Test;
+
 import br.com.dextra.curso.hibernate.services.HibernateServices;
 import br.com.dextra.curso.hibernate.services.ServiceFactory;
 
@@ -12,6 +14,8 @@ public class Exercicio02 {
 	 * Altere as entidades de modo que as tabelas geradas sejam: tbl_pessoa,
 	 * tbl_pessoaFisica e tbl_pessoaJuridica
 	 */
+	
+	@Test
 	public void teste() {
 		HibernateServices servico = ServiceFactory.getHibernateService();
 

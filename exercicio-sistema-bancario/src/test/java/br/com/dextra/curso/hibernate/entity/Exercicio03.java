@@ -1,5 +1,7 @@
 package br.com.dextra.curso.hibernate.entity;
 
+import javax.persistence.PersistenceException;
+
 import org.junit.Test;
 
 import br.com.dextra.curso.hibernate.services.HibernateServices;
@@ -13,7 +15,7 @@ public class Exercicio03 {
 	 * Altere as entidades de modo que nao seja possivel inserir duas pessoas
 	 * (fisica) com o mesmo cpf
 	 */
-	@Test
+	@Test (expected=PersistenceException.class)
 	public void teste() {
 		HibernateServices servico = ServiceFactory.getHibernateService();
 
@@ -27,5 +29,7 @@ public class Exercicio03 {
 		p2.setCpf("111.111.111-11");
 
 		p2 = servico.salvar(p2);
+		
+		
 	}
 }

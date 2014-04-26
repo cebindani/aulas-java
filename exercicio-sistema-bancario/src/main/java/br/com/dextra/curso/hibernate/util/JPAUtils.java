@@ -8,6 +8,6 @@ public final class JPAUtils {
 	public final static EntityManagerFactory emf;
 
 	static {
-		emf = Persistence.createEntityManagerFactory("exemplo-1");
+		emf = Persistence.createEntityManagerFactory("hsql");
 	}
 }
