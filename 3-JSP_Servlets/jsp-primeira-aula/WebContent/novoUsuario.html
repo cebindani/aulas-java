@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Novo Usuário</title>
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/stylesheet.css" />
+
+<script type="text/javascript">
+	function gravar() {
+		alert("Usuário salvo com sucesso!");
+
+	}
+</script>
+
+</head>
+<body>
+
+	<form>
+		<div class="well conteudo">
+			<fieldset>
+				<div class="input-group">
+					<label for="nome">Nome:</label> <input type="text"
+						class="form-control" id="nome">
+				</div>
+				<div class="input-group">
+					<label for="login">Login:</label> <input
+						type="date" class="form-control" id="login" maxlength="10">
+				</div>
+				<div class="input-group">
+					<label for="senha">Senha:</label> <input type="text"
+						class="form-control" id="senha" >
+				</div>
+				<div>
+					<input type="button" class="btn btn-primary" value="Gravar"
+						onclick="gravar();">
+
+				</div>
+			</fieldset>
+		</div>
+	</form>
+
+
+</body>
+</html>

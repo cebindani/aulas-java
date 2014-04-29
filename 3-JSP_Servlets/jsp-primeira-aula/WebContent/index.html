@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Teste</title>
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/stylesheet.css" />
+
+<script type="text/javascript">
+	function gravar() {
+		alert("Nome: " + document.getElementById("nome").value + "\n"
+				+ "\Data nascimento: "
+				+ document.getElementById("dataNascimento").value);
+
+	}
+</script>
+
+</head>
+<body>
+
+	<form>
+		<div class="well conteudo">
+			<fieldset>
+				<div class="input-group">
+					<label for="nome">Nome:</label> <input type="text"
+						class="form-control" id="nome">
+				</div>
+				<div class="input-group">
+					<label for="dataNascimento">Data nascimento:</label> <input
+						type="date" class="form-control" id="dataNascimento" maxlength="10">
+				</div>
+				<div class="input-group">
+					<label for="cpf">CPF:</label> <input type="text"
+						class="form-control" id="cpf" >
+				</div>
+				<div>
+					<input type="button" class="btn btn-primary" value="Gravar"
+						onclick="gravar();">
+
+				</div>
+			</fieldset>
+		</div>
+	</form>
+
+
+</body>
+</html>

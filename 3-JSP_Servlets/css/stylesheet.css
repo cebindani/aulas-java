@@ -1,0 +1,36 @@
+/*Reset */
+* { margin:0; padding:0; list-style:none; vertical-align:baseline; }
+
+body { padding-bottom: 40px; padding-top: 40px; }
+
+label { font-weight: normal; }
+
+h1, h2 {margin-left: 15px;}
+
+.conteudo {	width: 90%; margin-left: auto; margin-right: auto; }
+
+.input-group label { display: inline-block; }
+
+.formulario-login { background-color: #EEEEEE; margin: 0 auto; max-width: 330px; padding: 15px; }
+
+.formulario-erro { margin: 0 auto; max-width: 550px; padding: 15px; }
+
+.formulario-login .cabecalho, .formulario-erro .cabecalho { margin-bottom: 10px; text-align: center; }
+
+.formulario-login .form-control { -moz-box-sizing: border-box; font-size: 16px; height: auto; padding: 10px; position: relative; }
+
+.formulario-login .form-control:focus { z-index: 2; }
+
+.formulario-login input[type="text"] { border-bottom-left-radius: 0; border-bottom-right-radius: 0;
+										margin-bottom: -1px; }
+
+.formulario-login input[type="password"] { border-top-left-radius: 0; border-top-right-radius: 0; 
+											margin-bottom: 10px; }
+
+.input-group { margin-top: 20px; }
+
+.conteudo input.form-control { height: 30px; }
+
+div.input-group input { margin-left: 15px; width: 250px !important; }
+
+.app-buttons { margin-top: 15px; text-align: right; }

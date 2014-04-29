@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Login</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/stylesheet.css" />
+	<script type="text/javascript">
+		function login(){
+			var nome = document.getElementById("usuario").value;
+			var senha= document.getElementById("senha").value;
+			
+		
+			if (nome=='admin' && senha=='senha') {
+				window.location='index.html';
+			}else {
+				alert('Não autorizado.');
+			}
+			
+		}
+	
+	
+	</script>
+	
+	</head>
+	<body>
+	<div>
+	<form class="formulario-login">
+		<h2 class="cabecalho" align="center">Realizar login</h2>
+		
+		<input type="text" class="form-control" id="usuario" placeholder="Usuário"/>
+		<input type="password" class="form-control" id="senha" placeholder="Senha"/>
+
+		<input class="btn btn-lg btn-success btn-block" type="button" value="Login" onclick="login();" />
+		
+		</form>
+	</div>
+	</body>
+</html>
