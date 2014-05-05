@@ -1,0 +1,11 @@
+* { margin: 0; padding: 0;list-style: none; vertical-align: baseline }
+
+body{ padding-bottom: 40px; padding-top: 40px; }
+
+label { font-weight: normal; }
+
+h1, h2 { margin-left: 15px; }
+
+.formulario-login { background-color: #EEEEEE; margin: 0 auto;
+	max-width: 330px; padding: 15px;
+}

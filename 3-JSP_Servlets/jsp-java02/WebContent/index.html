@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/stylesheet.css"/>
+		<title>Pagina teste</title>
+		
+		<script type="text/javascript">
+			function exibeDados() {
+				var nome = document.getElementById("nome").value;
+				var data = document.getElementById("dataNascimento").value;
+				var cpf = document.getElementById("cpf").value;
+
+				alert (
+					'Nome: ' + nome + '\n' +
+					'Data de nascimento: ' + data + '\n' +
+					'CPF: ' + cpf
+				);
+			}
+		</script>
+	</head>
+
+	<body>
+		<form>
+			<div class="well conteudo">
+				<fieldset>
+					<div class="input-group">
+						<label for="nome">Nome: </label>
+						<input type="text" class="form-control" id="nome" />
+					</div>
+					<div class="input-group">
+						<label for="dataNascimento">Data de nascimento: </label>
+						<input type="text" class="form-control" id="dataNascimento" />
+					</div>
+					<div class="input-group">
+						<label for="cpf">CPF: </label>
+						<input type="text" class="form-control" id="cpf" />
+					</div>
+					
+					<div>
+						<input type="button" onclick="exibeDados();" class="btn btn-primary" value="Gravar" />
+					</div>
+					
+				</fieldset>
+			</div>
+		</form>
+	</body>
+</html>
