@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/stylesheet.css" />
+<title>Incluir aluno</title>
+</head>
+<body>
+	<form action="/jsp/criarAluno" method="POST">
+		<div class="well conteudo">
+			<fieldset>
+				<div class="input-group">
+					<label for="nome">Nome: </label> <input type="text"
+						class="form-control" id="nome" name="nome"/>
+				</div>
+				<div class="input-group">
+					<label for="dataNascimento">Data de nascimento: </label> <input
+						type="text" class="form-control" id="dataNascimento" name="dataNascimento" />
+				</div>
+				<div class="input-group">
+					<label for="telefone">Telefone: </label> <input type="text"
+						class="form-control" id="telefone" name="telefone"/>
+				</div>
+
+				<div>
+					<input type="submit" class="btn btn-primary" value="Gravar" />
+				</div>
+
+			</fieldset>
+		</div>
+	</form>
+
+</body>
+</html>

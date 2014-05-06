@@ -6,6 +6,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import br.com.dxt.domain.Usuario;
 import br.com.dxt.services.UsuarioService;
@@ -19,17 +20,22 @@ public class LoginServlet extends HttpServlet {
 
 		String usuario = req.getParameter("usuario");
 		String senha = req.getParameter("senha");
-		
-		
+
 		UsuarioService service = new UsuarioService();
 
 		Usuario usuarioBanco = service.buscarUsuario(usuario, senha);
 
 		if (usuarioBanco != null) {
+			HttpSession sessao = req.getSession();
+			sessao.setAttribute("usuarioLogado", usuarioBanco);
 			resp.sendRedirect("/jsp/index.html");
+
 		} else {
+			//resp.sendRedirect("/jsp/login.html");
+			
 			resp.sendError(HttpServletResponse.SC_FORBIDDEN);
 		}
 	}
+	
 
 }
