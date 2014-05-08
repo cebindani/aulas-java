@@ -32,6 +32,8 @@ public class AlunoServlet extends HttpServlet{
 		service.criarAluno(nome, dataNascimento, telefone);
 		
 		
+		
+		
 	}
 	
 	

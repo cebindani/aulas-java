@@ -10,6 +10,7 @@ import javax.servlet.http.HttpSession;
 
 import br.com.dxt.domain.Usuario;
 import br.com.dxt.services.UsuarioService;
+import br.com.treinamento.exception.UsuarioNaoAutorizadoException;
 
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 3527542414415403494L;
@@ -28,12 +29,10 @@ public class LoginServlet extends HttpServlet {
 		if (usuarioBanco != null) {
 			HttpSession sessao = req.getSession();
 			sessao.setAttribute("usuarioLogado", usuarioBanco);
-			resp.sendRedirect("/jsp/index.html");
+			resp.sendRedirect("/jsp/index.jsp");
 
 		} else {
-			//resp.sendRedirect("/jsp/login.html");
-			
-			resp.sendError(HttpServletResponse.SC_FORBIDDEN);
+			throw new ServletException(new UsuarioNaoAutorizadoException());
 		}
 	}
 	

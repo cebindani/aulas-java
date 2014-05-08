@@ -11,9 +11,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import br.com.dxt.domain.Usuario;
+import br.com.treinamento.exception.UsuarioNaoAutorizadoException;
 
 public class LoginFilter implements javax.servlet.Filter {
 
+	private static final String CSS_URL = "/jsp/css";
 	private static final String LOGIN_URL = "/jsp/login";
 	private static final String LOGIN_PAGE = "/jsp/login.html";
 
@@ -30,10 +32,11 @@ public class LoginFilter implements javax.servlet.Filter {
 		HttpServletResponse resp = (HttpServletResponse) response;
 
 		Usuario usuario = (Usuario) req.getSession().getAttribute("usuarioLogado");
-		if (usuario != null || req.getRequestURI().equals(LOGIN_PAGE) || req.getRequestURI().equals(LOGIN_URL)) {
+		if (usuario != null || req.getRequestURI().equals(LOGIN_PAGE) || req.getRequestURI().equals(LOGIN_URL) || req.getRequestURI().contains(CSS_URL)) {
 			chain.doFilter(req, resp);
 		} else {
-			resp.sendRedirect(LOGIN_PAGE);
+			//resp.sendRedirect(LOGIN_PAGE);
+			
 		}
 
 	}
