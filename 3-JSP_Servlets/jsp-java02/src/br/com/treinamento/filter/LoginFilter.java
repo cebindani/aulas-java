@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import br.com.dxt.domain.Usuario;
-import br.com.treinamento.exception.UsuarioNaoAutorizadoException;
 
 public class LoginFilter implements javax.servlet.Filter {
 

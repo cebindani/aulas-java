@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.com.dxt.services.AlunoService;
+
 /**
  * Servlet implementation class ListarAlunoServlet
  */
@@ -27,7 +29,7 @@ public class ListarAlunoServlet extends HttpServlet {
 		
 		AlunoService service= new AlunoService();
 		service.buscarTodos();
-		response.sendRedirect("jsp/ListarAlunos.jsp");
+		response.sendRedirect("jsp/listagemAluno.jsp");
 	}
 
 }

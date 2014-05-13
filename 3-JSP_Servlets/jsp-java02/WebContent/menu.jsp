@@ -11,18 +11,12 @@
 				data-toggle="dropdown"> Cadastro <b class="caret"></b>
 			</a>
 				<ul class="dropdown-menu">
-					<li><a href="/jsp/cadastroUsuario.jsp">Usuário</a></li>
-					<li><a href="/jsp/cadastroAluno.jsp">Aluno</a></li>
+					
+					<li><a href="/jsp/listagemUsuario.jsp">Usuário</a></li>
+					<li><a href="/jsp/listagemAluno.jsp">Aluno</a></li>
+					<li><a href="/jsp/listagemProfessor.jsp">Professor</a></li>
 				</ul></li>
 		</ul>
-		<ul class="nav navbar-nav">
-			<li class="dropdown"><a href="#" class="dropdown-toggle"
-				data-toggle="dropdown"> Buscar <b class="caret"></b>
-			</a>
-				<ul class="dropdown-menu">
-					<li><a href="/jsp/listarUsuario.jsp">Usuário</a></li>
-					<li><a href="/jsp/ListarAluno.jsp">Aluno</a></li>
-				</ul></li>
-		</ul>
+		
 	</div>
 </nav>
